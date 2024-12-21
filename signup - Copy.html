@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    <h1 class="edu">Eduphile</h1>
+    <div class="content">
+        <div>
+            <h1>Sign Up</h1>
+            <p>Already have an account?<a class="log" href="login.html">Log in</a></p>
+            <form id="signup">
+                <input type="email" name="text" id="name" placeholder="Email"><br><br>
+                <input type="email" name="email" id="email" placeholder="Confirm email"><br><br>
+                <input type="password" name="pas" id="pas" placeholder="Choose a password"><br><br>
+                <input type="password" name="cnf" id="cnf" placeholder="Confirm password"><br><br>
+                <a href="index.html"><button>Sign Up</button></a>
+            </form>
+        </div>
+        <p class="foot">* By signing up, you agree to our Terms of Use and acknowledge you’>ve read our Privacy Policy<br>
+            This site is protected by reCAPTCHA Enterprise. Google's Privacy Policy and Terms of Service apply.</p>
+    </div>
+</body>
+<style>
+
+    :root{
+        --main-color: #2ecc71;
+    }
+
+    .edu{
+        color: var(--main-color);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+    }
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 1s ease-out; /* Smooth fade-out transition */
+      z-index: 9999; /* Makes sure it's above all other elements */
+    }
+
+    .loading-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Page Content Styles */
+    .content {
+      opacity: 0;
+      transition: opacity 1s ease-in; /* Smooth fade-in transition for content */
+    }
+
+    .content.loaded {
+      opacity: 1;
+    }
+
+    
+    .foot {
+        font-size: 12px;
+        color: rgb(88, 89, 90);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    div {
+        text-align: center;
+        margin-left: 10%;
+        height: 500px;
+        width: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div h1 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+     font-size: 50px;
+    }
+    
+    .log {
+        text-decoration: solid;
+        color: blue;
+        margin-left: 5px;
+    }
+
+    #name {
+        border: 0;
+        height: 50px;
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #name:focus {
+        font-size: 14px; /* Shrinks the text size */
+        transform: scale(1.0); /* Shrinks the input text */
+        color: #333;
+        border-color: #4285F4;
+        outline: none;
+        border: none;
+        
+    }
+
+    #name:focus::placeholder {
+        font-size: 14px; /* Placeholder also shrinks */
+        color: #4285F4; /* Change color when focused */
+        width: 40%;
+    }
+
+    #name::placeholder {
+        font-size: 20px; /* Initial placeholder font size */
+        transition: all 0.3s ease;
+        color: #999;
+    }
+    #email {
+        border: 0;
+        height: 50px;
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #email:focus {
+        font-size: 14px; /* Shrinks the text size */
+        transform: scale(1.0); /* Shrinks the input text */
+        color: #333;
+        border-color: #4285F4;
+        outline: none;
+        border: none;
+    }
+
+    #email:focus::placeholder {
+        font-size: 14px; /* Placeholder also shrinks */
+        color: #4285F4; /* Change color when focused */
+        width: 40%;
+    }
+
+    #email::placeholder {
+        font-size: 20px; /* Initial placeholder font size */
+        transition: all 0.3s ease;
+        color: #999;
+    }
+    #pas {
+        border: 0;
+        height: 50px;
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #pas:focus {
+        font-size: 14px; /* Shrinks the text size */
+        transform: scale(1.0); /* Shrinks the input text */
+        color: #333;
+        border-color: #4285F4;
+        outline: none;
+        border: none;
+        
+    }
+
+    #pas:focus::placeholder {
+        font-size: 14px; /* Placeholder also shrinks */
+        color: #4285F4; /* Change color when focused */
+        width: 40%;
+        
+    }
+
+    #pas::placeholder {
+        font-size: 20px; /* Initial placeholder font size */
+        transition: all 0.3s ease;
+        color: #999;
+        
+    }
+    #cnf {
+        border: 0;
+        height: 50px;
+        width: 40%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #cnf:focus {
+        font-size: 14px; /* Shrinks the text size */
+        transform: scale(1.0); /* Shrinks the input text */
+        color: #333;
+        border-color: #4285F4;
+        outline: none;
+        border: none;
+        
+    }
+
+    #cnf:focus::placeholder {
+        font-size: 14px; /* Placeholder also shrinks */
+        color: #4285F4; /* Change color when focused */
+        width: 40%;
+    }
+
+    #cnf::placeholder {
+        font-size: 20px; /* Initial placeholder font size */
+        transition: all 0.3s ease;
+        color: #999;
+    }
+
+    button {
+        border: 1px solid rgb(0, 131, 253);
+        padding: 5px;
+        border-radius: 20px;
+        color: rgb(0, 131, 253);
+        height: 50px;
+        width: 100px;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: bold;
+    }
+
+    button:hover {
+        color: white;
+        background-color: rgb(0, 131, 253);
+    }
+</style>
+</html>
+<script>
+    window.addEventListener("load", function() {
+      // Hide the loading screen with a fade-out effect
+      const loadingScreen = document.querySelector(".loading-screen");
+      const content = document.querySelector(".content");
+
+      // When the window is loaded, add the "hidden" class to the loading screen and show the content
+      loadingScreen.classList.add("hidden");
+      content.classList.add("loaded");
+
+      // Ensure the page content is fully loaded and the loading screen fades out
+    });
+  </script>
+  <script src="2.js"></script>

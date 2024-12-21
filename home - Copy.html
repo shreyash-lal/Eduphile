@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+
+        <section class="flex">
+            <a href="home.html" class="logo">Eduphile</a>
+
+
+            <form action="" method="post" class="search-form"> 
+                <input type="text" name="search_box" placeholder="search courses..."
+                required maxlength="100" spellcheck="true">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search" style="display: none;"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img src="WhatsApp Image 2024-09-05 at 2.41.05 AM.jpg" alt="dp">
+                <h3>Shreyash</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="inline-delete-btn">Logout</a>
+                    <a href="register.html" class="option-btn">Register</a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </header>
+
+
+    <!-- side bar section starts -->
+
+    <div class="side-bar">
+
+
+        <div class="close-side-bar">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="profile">
+            <img src="WhatsApp Image 2024-09-05 at 2.41.05 AM.jpg" alt="dp">
+            <h3>Shreyash</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+
+        <nav class="nav-bar">
+            <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>About us</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+        </nav>
+    </div>
+
+
+<!-- Quick Selection -->
+
+<section class="quick-select">
+    <h1 class="heading">Quick options</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <h3 class="title">Likes and Comments</h3>
+            <p>Total like : <span>14</span></p>
+            <a href="#" class="inline-btn">Views Likes</a>
+            <p>Total comments : <span>5</span></p>
+            <a href="#" class="inline-btn">View Comments</a>
+            <p>Saved playlist : <span>3</span></p>
+            <a href="#" class="inline-btn">View Playlists</a>
+        </div>
+
+
+        <div class="box">
+            <h3 class="title">Top Categories</h3>
+            <div class="flex">
+                <a href="#"><i class="fas fa-code"></i><span>Development</span></a>
+                <a href="#"><i class="fas fa-chart-simple"></i><span>Business</span></a>
+                <a href="#"><i class="fas fa-pen"></i><span>Design</span></a>
+                <a href="#"><i class="fas fa-chart-line"></i><span>Marketing</span></a>
+                <a href="#"><i class="fas fa-music"></i><span>Music</span></a>
+                <a href="#"><i class="fas fa-camera"></i><span>Photography</span></a>
+                <a href="#"><i class="fas fa-cog"></i><span>Software</span></a>
+                <a href="#"><i class="fas fa-vial"></i><span>Science</span></a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <h3 class="title">Popular Topics</h3>
+            <div class="flex">
+                <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+                <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+                <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
+                <a href="#"><i class="fab fa-react"></i><span>react</span></a>
+                <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+                <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
+            </div>
+        </div>
+
+        <div class="box" id="box-tutor">
+            <h3 class="title">Become a tutor</h3>
+            <p>Join our platform as a tutor and help students succeed with flexible teaching opportunities!</p>
+            <a href="register.html" class="inline-btn">Get started</a>
+        </div>
+    </div>
+</section>
+
+<!-- Coursese -->
+
+<section class="courses">
+    <h1 class="heading">Our Courses</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="tutor">
+                <img src="img2.jpg" alt="...">
+                <div>
+                    <h3>Parminder singh</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="html1.webp" class="thumb" alt="...">
+            <h3 class="title">Complete HTML tutorial</h3>
+            <a href="playlist.html" class="inline-btn">View Playlist</a>
+        </div>
+
+        <div class="box">
+            <div class="tutor">
+                <img src="img1.jpg" alt="...">
+                <div>
+                    <h3>Arya saini</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="cs.jpg" class="thumb" alt="...">
+            <h3 class="title">Complete CSS tutorial</h3>
+            <a href="playlist2.html" class="inline-btn">View Playlist</a>
+        </div>
+
+        <div class="box">
+            <div class="tutor">
+                <img src="b2.jpeg" alt="...">
+                <div>
+                    <h3>John Deo</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="javas.jpg" class="thumb" alt="...">
+            <h3 class="title">Complete javascript tutorial</h3>
+            <a href="playlist3.html" class="inline-btn">View Playlist</a>
+        </div>
+
+        <div class="box">
+            <div class="tutor">
+                <img src="img5.jpg" alt="...">
+                <div>
+                    <h3>Keshav Gupta</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="sass.jpg" class="thumb" alt="...">
+            <h3 class="title">Complete Sass tutorial</h3>
+            <a href="playlist.html" class="inline-btn">View Playlist</a>
+        </div>
+
+        <div class="box">
+            <div class="tutor">
+                <img src="img6.jpg" alt="...">
+                <div>
+                    <h3>Vinayak Shah</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="react.jpg" class="thumb" alt="...">
+            <h3 class="title">Complete Reactjs tutorial</h3>
+            <a href="playlist.html" class="inline-btn">View Playlist</a>
+        </div>
+
+        <div class="box">
+            <div class="tutor">
+                <img src="img7.jpg" alt="...">
+                <div>
+                    <h3>Ankita Dave</h3>
+                    <span>21-10-2024</span>
+                </div>
+            </div>
+            <img src="node.png" class="thumb" alt="...">
+            <h3 class="title">Complete Nodejs tutorial</h3>
+            <a href="playlist.html" class="inline-btn">View Playlist</a>
+        </div>
+    </div>
+
+    <div class="more-btn">
+        <a href="courses.html" class="inline-option-btn">view more</a>
+    </div>
+</section>
+
+<!-- courses khatam -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+
+    &copy; copyright @ 2024 by <span>Being</span> | All rights reserved!
+</footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

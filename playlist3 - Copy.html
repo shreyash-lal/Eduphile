@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">Eduphile</a>
+
+
+            <form action="" method="post" class="search-form"> 
+                <input type="text" name="search_box" placeholder="search courses..."
+                required maxlength="100" spellcheck="true">
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search" style="display: none;"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img src="WhatsApp Image 2024-09-05 at 2.41.05 AM.jpg" alt="dp">
+                <h3>Shreyash</h3>
+                <span>student</span>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">Register</a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </header>
+
+
+    <!-- side bar section starts -->
+
+    <div class="side-bar">
+
+
+        <div class="close-side-bar">
+            <i class="fas fa-times"></i>
+        </div>
+
+
+
+
+
+        <div class="profile">
+            <img src="WhatsApp Image 2024-09-05 at 2.41.05 AM.jpg" alt="dp">
+            <h3>Shreyash</h3>
+            <span>student</span>
+            <a href="profile.html" class="btn">View Profile</a>
+        </div>
+
+        <nav class="nav-bar">
+            <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>About us</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+        </nav>
+    </div>
+
+
+<!-- playlist -->
+
+<section class="playlist">
+    
+    <h1 class="heading">Playlist Details</h1>
+
+    <div class="row">
+
+        <div class="col">
+            <form action="" method="post" class="save-list">
+                <button type="submit" name="save-list"><i class="far fa-bookmark"></i><span>Save Playlist</span></button>
+            </form>
+
+            <div class="thumb">
+                <span><i class="fas fa-bars"></i>6 videos</span>
+                <img src="javas.jpg" alt="Being">
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="tutor">
+                <img src="b2.jpeg" alt="being">
+                <div>
+                    <h3>Deva Mehta</h3>
+                    <span>Developer</span>
+                </div>
+            </div>
+
+            <div class="details">
+                <h3>Complete JS Tutorial</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a rem sapiente vero molestiae sed.
+                </p>
+                <div class="date"><i class="fas fa-calendar"></i><span>29-10-2024</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Video container -->
+
+<section class="videos-container">
+    
+    <h1 class="heading">Playlist Videos</h1>
+
+    <div class="box-container">
+
+        <a href="watch-video.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-01)</h3>
+        </a>
+
+        <a href="watch-video2.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-02)</h3>
+        </a>
+
+        <a href="watch-video.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-03)</h3>
+        </a>
+
+        <a href="watch-video.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-04)</h3>
+        </a>
+
+        <a href="watch-video.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-05)</h3>
+        </a>
+
+        <a href="watch-video.html" class="box">
+            <i class="fas fa-play"></i>
+            <img src="javas.jpg" alt="html">
+            <h3>Complete JS Tutorial (part-06)</h3>
+        </a>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+
+    &copy; copyright @ 2024 by <span>Being Mafiya</span> | All rights reserved!
+</footer>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
